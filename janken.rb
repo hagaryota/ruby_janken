@@ -26,8 +26,10 @@ def janken
     puts "あなた：#{case_patten}を出しました"
  when "戦わない"
     puts "ゲームを終了します。"
+    exit
  when "その他"
-    puts "エラーです。１〜３を入力してください。"
+    puts "エラーです。0〜３を入力してください。"
+    return true
  end
 
  number_randam = rand(3)
